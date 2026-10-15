@@ -1,0 +1,17 @@
+{
+  "name": "backlog-marketplace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun scripts/dev.ts",
+    "build": "bun scripts/build.ts",
+    "preview": "bun scripts/dev.ts --no-watch",
+    "typecheck": "tsc --noEmit",
+    "deploy": "bun run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.0.0"
+  }
+}
